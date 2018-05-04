@@ -1,0 +1,136 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 600px
+			height: 100vh
+			background-color: #111
+			color: white
+			.top-line
+				padding-top: 40px
+				position: absolute
+				width: 100%
+				z-index: 1
+
+.logo
+	img
+		width: 125px
+		height: auto
+		margin-left: 45px 
+
+
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+
+
+.text-center
+	text-align: center
+
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: 100
+	background-color: #111
+
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin-left: -40px
+	margin-top: -40px
+	&:before, &:after
+		content: ''
+		border: 5px solid #323232
+		width: 80px
+		height: 80px
+		border-radius: 500px
+		position: absolute
+	&:before
+		animation: pulse-outer 0.8s ease-in infinite
+	&:after
+		animation: pulse-inner 0.8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)
+
+
+
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+section
+	background-color: #FFF
+	&.inverse
+		color: white
+		background-color: #111
+		&.s-call
+			background-color: #FFF
+	.h2
+		font-size: 30px
+		font-weight: 800
+		color: $accent
+		span
+			color: white
+
+
+	nav
+		.nav-bottom
+			background-color: #fff
+		.nav-bottom	 
+			background-color: #272727
+
+
+@import "media"
