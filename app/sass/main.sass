@@ -18,6 +18,8 @@
 	color: #666
 	opacity: 1
 
+*
+	box-sizing: border-box
 
 html, body
 	height: 100%
@@ -41,12 +43,6 @@ body
 				position: absolute
 				width: 100%
 				z-index: 1
-
-.logo
-	img
-		width: 125px
-		height: auto
-		margin-left: 45px 
 
 
 .h1, .h2, .h3, .h4, .h5, .h6
@@ -131,6 +127,90 @@ section
 			background-color: #fff
 		.nav-bottom	 
 			background-color: #272727
+
+.logo
+	padding-top: 40px
+	padding-bottom: 40px
+	img
+		width: 140px
+		height: auto
+
+.navigation
+	padding-top: 40px
+	padding-bottom: 40px
+	.navigation-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		text-transform: uppercase
+		.list-item
+			padding-left: 30px				
+			a
+				color: #777
+				font-family: 'Montserrat'
+				font-weight: 700
+				font-size: 14px
+				text-decoration: none
+				transition: .3s ease-out
+				&:hover, &:focus, &:active
+					color: #5fcf80
+					border-bottom: 1px solid #7cc576
+			.active
+				color: #5fcf80
+		
+.header-banner
+	padding-top: 80px
+	padding-bottom: 80px
+	min-height: 400px
+	text-align: center
+	background-image: linear-gradient(to bottom, rgba(48,56,83,0) 40%, #303853 60%, #303853 100%),url(../img/bg.png)
+	background-position-x: 100%,100%
+	background-position-y: 0,-200px
+	background-size: cover
+	background-repeat: no-repeat,no-repeat
+	background-color: #303853
+	background-attachment: fixed,fixed
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	h1
+		font-family: 'Montserrat'
+		font-weight: 700
+		color: #fff
+		text-transform: uppercase
+		font-size: 60px
+		line-height: 65px
+		letter-spacing: -2px
+	.subtitle
+		font-size: 20px
+		color: #ccc
+		font-family: 'Roboto Slab'
+	.button
+		display: inline-block
+		margin-top: 50px
+		margin-bottom: 30px
+		background-color: #7cc576
+		border-radius: 60px
+		padding: 20px 35px
+		color: #fff 
+		text-transform: uppercase
+		font-size: 16px
+		font-family: 'Montserrat'
+		font-weight: 700
+		text-shadow: 0px 1px 1px rgba(34, 129, 26, 1)
+		transition: .3s ease-out
+		&:hover
+			text-decoration: none
+			background-color: #67b760
+		&:active
+			text-decoration: none
+			background-color: #92d68d
+		&:focus
+			text-decoration: none
 
 
 @import "media"
