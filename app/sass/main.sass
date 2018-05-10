@@ -23,13 +23,15 @@
 
 html, body
 	height: 100%
+	width: 100%
+	overflow-x: hidden
 
 body
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.75
-	font-family: $default-font
+	font-family: 'Roboto Slab'
 	overflow-x: hidden
 	opacity: 1
 	&.ishome
@@ -127,6 +129,31 @@ section
 			background-color: #fff
 		.nav-bottom	 
 			background-color: #272727
+.button
+		display: inline-block
+		margin-top: 50px
+		margin-bottom: 30px
+		background-color: #7cc576
+		border-radius: 60px
+		padding: 20px 35px
+		color: #fff 
+		text-transform: uppercase
+		font-size: 16px
+		font-family: 'Montserrat'
+		font-weight: 700
+		text-shadow: 0px 1px 1px rgba(34, 129, 26, 1)
+		transition: .3s ease-out
+		&:hover
+			color: #fff
+			text-decoration: none
+			background-color: #67b760
+		&:active
+			color: #fff
+			text-decoration: none
+			background-color: #92d68d
+		&:focus
+			color: #fff
+			text-decoration: none
 
 .logo
 	padding-top: 40px
@@ -189,28 +216,7 @@ section
 		font-size: 20px
 		color: #ccc
 		font-family: 'Roboto Slab'
-	.button
-		display: inline-block
-		margin-top: 50px
-		margin-bottom: 30px
-		background-color: #7cc576
-		border-radius: 60px
-		padding: 20px 35px
-		color: #fff 
-		text-transform: uppercase
-		font-size: 16px
-		font-family: 'Montserrat'
-		font-weight: 700
-		text-shadow: 0px 1px 1px rgba(34, 129, 26, 1)
-		transition: .3s ease-out
-		&:hover
-			text-decoration: none
-			background-color: #67b760
-		&:active
-			text-decoration: none
-			background-color: #92d68d
-		&:focus
-			text-decoration: none
+
 
 section
 	padding: 85px 0
@@ -277,9 +283,49 @@ section
 			right: 0
 			top: 0
 	.background-photo
+		padding: 100px
+		padding-top: 40px
+		padding-bottom: 40px
 		width: 70%
 		background-image: url(../img/bg-relax.jpg)
 		background-size: cover
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.relax-content
+			width: 100%
+			h2
+				font-family: 'Montserrat'
+				font-weight: 700
+				text-transform: uppercase
+				font-size: 40px
+				color: #fff
+				line-height: 45px
+				letter-spacing: -1px
+				// text-align: center
+				margin-bottom: 0
+				span
+					color: #7cc576
+			p
+				letter-spacing: -0.5px
+				font-size: 17px
+				color: #ccc
+				font-family: 'Roboto Slab'
+			.list-icons-check
+				padding: 00
+				list-style-type: none
+				li	
+					display: flex			
+					letter-spacing: -0.5px
+					font-size: 17px
+					color: #ccc
+					font-family: 'Roboto Slab'
+					margin-bottom: 17px
+					i
+						font-size: 35px
+						margin-right: 15px
+				
 
 
 @import "media"
