@@ -411,7 +411,57 @@ section
 				top: 40px 
 				right: -100px
 
-			
+.clients
+	position: relative
+	.clients-content
+		margin-top: 70px
+		.clients-content-item
+			position: relative
+			margin-top: 30px
+			display: flex
+			flex-direction: row
+			align-items: center
+			.clients-content-photo
+				margin-right: 50px
+				img
+					width: 200px
+					height: 200px
+					border-radius: 50%
+			.clients-content-text
+				background-color: #efefef
+				padding: 20px 30px
+				p
+					color: #777
+					font-size: 18px
+				.autor
+					text-align: center
+					color: #7cc576
+				&:before
+					content: ''
+					position: absolute
+					top: 90px
+					left: 230px
+					border-style: solid
+					border-width: 10px 20px 10px 0px
+					border-color: transparent #efefef transparent transparent 
+		.clients-content-item:nth-child(2)
+			flex-direction: row-reverse
+			.clients-content-photo
+				margin-right: 0
+				margin-left: 50px
+			.clients-content-text
+				&:before
+					display: none
+				&:after
+					content: ''
+					position: absolute
+					top: 90px
+					right: 230px
+					border-style: solid
+					border-width: 10px 0px 10px 20px
+					border-color: transparent transparent transparent #efefef
+					
+					
 				
 
 @import "media"
