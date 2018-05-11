@@ -266,6 +266,7 @@ section
 	min-height: 615px
 	display: flex
 	flex-direction: row
+	padding-bottom: 0 
 	.background-icon
 		width: 30%
 		background-color: #e9e9e9
@@ -326,6 +327,51 @@ section
 						font-size: 35px
 						margin-right: 15px
 				
+.latest-project
+	position: relative
+	.latest-project-wrapper
+		margin-top: 60px 
+		.latest-project-content
+			h4
+				text-transform: uppercase
+				font-family: 'Montserrat'
+			p
+				color: #777
+				font-family: 'Roboto Slab'
+			ul
+				padding: 0
+				li
+					display: flex
+					align-items: center
+					i
+						margin-right: 40px
+						font-size: 35px
+						border: 2px solid #111
+						border-radius: 50%
+						padding: 11px
+					h5
+						margin-bottom: 0
+						font-family: 'Montserrat'
+						font-size: 15px
+					p
+						margin-top: 0
+			a
+				text-transform: uppercase
+				color: #7cc576
+				font-size: 16px
+				font-family: Montserrat
+				font-weight: 700
+				&:after
+					content: '->'
+					margin-left: 8px
+
+
+		.latest-project-photo
+			margin-left: 80px
+			img
+				height: 550px
+			
+
 
 
 @import "media"
