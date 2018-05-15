@@ -496,12 +496,48 @@ section
 			filter: grayscale(100%)		
 
 .contacts
-	padding-top: 40px 
+	padding: 40px 0 
 	background-color: #222	
 	color: #fff
 	h4
 		text-transform: uppercase
 		font-family: Montserrat
-		
+	ul
+		padding: 0
+		li
+			display: flex
+			flex-direction: row
+			align-items: center
+			i
+				margin-right: 15px
+				font-size: 30px
+		.social
+			//margin-top: 16px
+			display: flex
+			align-items: flex-start
+			.icon
+				margin-top: 16px
+				
+footer
+	background-color: #fff
+	padding: 20px 0
+	font-family: Arial, Helvetica, sans-serif
+	.social-icons
+		height: 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		i
+			width: 40px
+			height: 40px
+			font-size: 20px
+			margin-right: 10px
+			background-color: #222
+			color: #fff
+			padding: 10px
+			border-radius: 100%
+			display: flex
+			justify-content: center
+
 
 @import "media"
